@@ -2,12 +2,27 @@
 
 <form #userForm="ngForm">
 
-    <div>
-        <label>Numero de la question </label>
+    <div [ngClass]="{BoxQuestionClass : true , bckgndColorBlue:impair}" *ngFor="let question of questions; index as i; odd as impair">
+        <label>l'Id de la question {{i}} </label>
         <ul>
-            <li *ngFor="let question of questions; index as i">{{i}} {{question.name}}</li>
+            <li > 
+                <p> Language : {{question.langage}}.</p>
+                <p> Difficulté : {{question.difficulty}}.</p>
+                <p>{{question.name}}.</p>
+                
+            </li>
         </ul>
          
+        <div [ngClass]="{reponseClass : true}">
+            <label>Réponses : </label>
+            <p *ngFor="let answer of question.answers; index as j"> {{j}} {{answer}}.</p>
+            <p> Difficulté : {{question.difficulty}}.</p>
+
+        </div>
+        <!-- <label>Numero de la question </label>
+        <ul>
+            <li *ngFor="let question of questions; index as i">{{i}} {{question.name}}</li>
+        </ul> -->
         
     </div>
     <!-- <div>
