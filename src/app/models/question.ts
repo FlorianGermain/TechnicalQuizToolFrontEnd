@@ -1,6 +1,6 @@
 export class Question {
     constructor( public id : number,
-                 public langage : string , 
+                 public language : string , 
                  public difficulty : string, 
                  public name : string,
                  public answers : (string)[]
