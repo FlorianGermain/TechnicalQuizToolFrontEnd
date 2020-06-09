@@ -10,7 +10,7 @@
                 <!-- <p> Langage : <input name=language [(ngModel)]="question.language"></p> -->
                 <span> Langage : </span> 
                 <select name=language size="1" [(ngModel)]="question.language">
-                        <option *ngFor="let lang of languageList" [selected]="selected" > {{lang}}  </option>
+                        <option *ngFor="let lang of languageList" selected="selected" > {{lang}}  </option>
                </select>
 
                
@@ -19,10 +19,11 @@
                     <option selected="selected">mardi</option>
                     <option>mercredi</option> 
                 </SELECT> -->
-                
-
-
-                <p> Difficulté : <input name=difficulty [(ngModel)]="question.difficulty"></p>
+               
+                <span> Difficulté : </span> 
+                <select name=difficulty size="1" [(ngModel)]="question.difficulty">
+                        <option *ngFor="let diff of difficultyList" selected="selected" > {{diff}}  </option>
+               </select>
                 <!-- <p> name : {{question.name}}.</p> -->
                 <p> Intitulé : <input name=name [(ngModel)]="question.name"> </p>
                 

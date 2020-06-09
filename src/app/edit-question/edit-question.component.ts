@@ -29,7 +29,7 @@ export class EditQuestionComponent implements OnInit {
   }
 
   SelectQuestion(){
-    this.question = this.questions[2];
+    this.question = this.questions[1];
   }
 
 

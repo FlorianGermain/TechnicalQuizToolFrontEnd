@@ -11,7 +11,7 @@ export class LanguageService {
   get(): Array<string> {
    
     
-    return ["Angular","Csharp","SQL","HTML","CSS"];
+    return ["Angular","CSharp","SQL","HTML","CSS"];
 
   }
 
