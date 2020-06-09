@@ -15,7 +15,8 @@ export class QuestionService {
       // new Question(2,"Angular","easy","Ceci est la 2eme question","vrai","non","surement","la réponse D")
        
       new Question(1,"Angular","easy","Ceci est la premiere question",["vrai","non","je ne sais pas","la réponse D"]),
-      new Question(2,"Angular","easy","Ceci est la 2eme question",["vrai","non","surement","la réponse D"])
+      new Question(2,"Angular","easy","Ceci est la 2eme question",["vrai","non","surement","la réponse D"]),
+      new Question(2,"Angular","easy","Ceci est la 3eme question",["ah bon?","non","peut-etre","la réponse D"])
      
     ];
 

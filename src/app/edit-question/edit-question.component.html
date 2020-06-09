@@ -8,7 +8,7 @@
             <li > 
                 <p> Language : {{question.langage}}.</p>
                 <p> Difficulté : {{question.difficulty}}.</p>
-                <p>{{question.name}}.</p>
+                <p> Intitulé : {{question.name}}.</p>
                 
             </li>
         </ul>
@@ -16,7 +16,7 @@
         <div [ngClass]="{reponseClass : true}">
             <label>Réponses : </label>
             <p *ngFor="let answer of question.answers; index as j"> {{j}} {{answer}}.</p>
-            <p> Difficulté : {{question.difficulty}}.</p>
+            
 
         </div>
         <!-- <label>Numero de la question </label>
