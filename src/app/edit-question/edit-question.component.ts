@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { QuestionService } from 'src/services/question.service';
 
 @Component({
   selector: 'tqt-edit-question',
@@ -6,10 +7,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./edit-question.component.scss']
 })
 export class EditQuestionComponent implements OnInit {
+  questions : any=[];
 
-  constructor() { }
+  constructor(private questionService:QuestionService) { }
 
   ngOnInit(): void {
+    this.questions = this.questionService.get();
   }
+
+
 
 }
