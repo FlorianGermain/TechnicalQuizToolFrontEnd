@@ -1,0 +1,16 @@
+<h2>Modification de questions</h2>
+
+<form (ngSubmit)="register(userForm.value)" #userForm="ngForm">
+
+    <div>
+        <label>Numero de la quesiton </label> 
+        
+    </div>
+    <div>
+        <label>intitulé</label> <input name="intitule" [(ngModel)]="question.name"/>
+    </div>
+    <div *ngFor="let answer of anwsers;index as i">
+        <label>Réponse {{i}}  </label> <input name="answer" [(ngModel)]={{answer.name}}/>
+    </div>
+    <button type="submit">enregistrer</button>
+</form>
